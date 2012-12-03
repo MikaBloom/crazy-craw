@@ -4,6 +4,12 @@ import java.math.BigDecimal;
 
 public class ContaCorrente implements Conta {
 	
+	@Override
+	public String toString() {
+		return "ContaCorrente [numero=" + numero + ", cliente=" + cliente
+				+ ", saldo=" + saldo + "]";
+	}
+
 	private String numero;
 	private Cliente cliente;
 	private BigDecimal saldo;
